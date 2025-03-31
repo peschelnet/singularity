@@ -1,0 +1,9 @@
+{
+    "Sidney": "en_GB-cori-high.onnx",
+    "TALON": "en_GB-alba-medium.onnx",
+    "Emily": "en_GB-semaine-medium.onnx",
+    "Scout": "en_GB-jenny_dioco-medium.onnx",
+    "GHOST": "en_GB-alan-medium.onnx",
+    "DEX": "en_US-ryan-high.onnx",
+    "Gordon" : "en_US-joe-medium.onnx"
+}

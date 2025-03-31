@@ -1,0 +1,15 @@
+#!/bin/bash
+# Singularity Quickstart Script
+echo "🚀 Initializing Project Singularity Deployment..."
+
+# Pull the latest GitHub repo
+git clone https://github.com/yourusername/singularity.git
+cd singularity
+
+# Create Data Directories
+mkdir -p {sidney,emily,talon,scout,ghost,gordon,piper}-data
+
+# Docker Compose up
+docker-compose up -d --build
+
+echo "🎉 Project Singularity launched successfully!"

@@ -1,0 +1,60 @@
+version: '3.9'
+
+services:
+  sidney-core:
+    image: singularity/sidney-core
+    build: ./sidney-core
+    ports:
+      - 8080:8080
+    volumes:
+      - ./sidney-data:/data
+
+  emily-coder:
+    image: singularity/emily-coder
+    build: ./emily
+    ports:
+      - 8081:8081
+    volumes:
+      - ./emily-data:/data
+
+  talon-health:
+    image: singularity/talon-health
+    build: ./talon
+    ports:
+      - 8082:8082
+    volumes:
+      - ./talon-data:/data
+
+  scout-game:
+    image: singularity/scout-game
+    build: ./scout
+    ports:
+      - 8083:8083
+    volumes:
+      - ./scout-data:/data
+
+  ghost-cyber:
+    image: singularity/ghost-cyber
+    build: ./ghost
+    ports:
+      - 8084:8084
+    volumes:
+      - ./ghost-data:/data
+
+  gordon-finance:
+    image: singularity/gordon-finance
+    build: ./gordon
+    ports:
+      - 8085:8085
+    volumes:
+      - ./gordon-data:/data
+
+  piper-tts:
+    image: singularity/piper-tts
+    build: ./piper
+    ports:
+      - 8000:8000
+    devices:
+      - /dev/snd:/dev/snd
+    volumes:
+      - ./piper-data:/data
